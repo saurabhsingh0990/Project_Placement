@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/*nav bar*/
+header {
+    padding: 15px 0;
+    background: repeating-linear-gradient(45deg, #1e1b1c, #1e1b1c 20px, #1e1b1c 20px, #1e1b1c 40px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.container {
+   box-sizing:border-box;
+    padding: 10px 20px;
+    max-width: 100vw;
+    min-height:100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background-color: #1e1b1c;
+}
+
+.logo-box {
+    float: left;
+    margin-right: 10px;
+}
+
+    .logo-box a {
+        outline: none;
+        display: block;
+    }
+
+    .logo-box img {
+        display: block;
+        width:100px;
+    }
+
+nav {
+    
+    float: right
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+    height: 70px;
+    line-height: 70px;
+    transition: .5s linear;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+    nav a:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        background: #868686;
+        transition: width .5s linear;
+    }
+
+    nav a:hover:after {
+        width: 100%;
+    }
+
+@media screen and (max-width: 660px) {
+    header {
+        text-align: center;
+    }
+
+    .logo-box {
+        float: none;
+        display: inline-block;
+        margin: 0 0 16px 0;
+    }
+
+    ul {
+        float: none;
+    }
+
+    nav li:first-of-type {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        overflow: visible;
+    }
+
+        nav li {
+            display: block;
+            margin: 0;
+            height: 40px;
+            line-height: 40px;
+        }
+
+            nav li:hover {
+                background: rgba(0,0,0,.1);
+            }
+
+        nav a:after {
+            content: none;
+        }
+}
+
+/*footer*/
+footer {
+
+    color: #666;
+    background: #222;
+    /*position: absolute;*/
+        margin-top:50px;
+    padding: 5px 0 5px 0;
+    border-top: 1px solid #000;
+    text-align: center;
+    width: 100%;
+    
+}
+
+    footer a {
+        color: #999;
+    }
+
+        footer a:hover {
+            color: #efefef;
+        }
+
+/* responsive footer fix by Aalaap Ghag 
+This is where the magic happens */
+@media (max-width: 767px) {
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container {
+    max-width: 940px;
+}
+
+/*slider*/
+
+
+
+
+
+
+

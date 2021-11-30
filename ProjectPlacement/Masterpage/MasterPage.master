@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Masterpage_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   <link rel="stylesheet" href="~/css/styling.css?version =1">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 90px;
+            height: 90px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+<header style="background-color:#1e1b1c; max-width:100vw">
+  <div class="container" >
+    <div class="logo-box">
+      <a href="/">
+        <img src="../Image/Logo.jpg" class="auto-style2">
+      </a>
+    </div>
+    <nav >
+    <ul>
+      <li><a href="../FirstPage.aspx">home</a></li>
+      <li><a href="../extra2/uni.aspx">University</a></li>
+      <li><a href="../extra/dept.aspx">Department</a></li>
+      <li><a href="../testimonial.aspx">Testimonials</a></li>
+        <li><a href="../rec.aspx">Recruiters</a></li>
+      <li><a href="../dev/Dev.aspx" >contact Dev</a></li>
+   </ul>
+  </nav>
+  </div>
+</header>
+
+
+        
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+            <
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+             <footer>
+                            <div class="container">
+                                <p>
+                                    write about tpc and dev <a href="#">Copyright</a> and stuff</p>
+                            </div>
+                        </footer>
+        </asp:ContentPlaceHolder>
+
+    </form>
+    
+</body>
+</html>
